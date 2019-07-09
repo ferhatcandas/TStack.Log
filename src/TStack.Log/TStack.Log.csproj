@@ -5,10 +5,14 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\TStack.ADO\src\TStack.ADO\TStack.ADO.csproj" />
-    <ProjectReference Include="..\..\..\TStack.Dapper\src\TStack.Dapper\TStack.Dapper.csproj" />
+    <PackageReference Include="TStack.ADO" Version="1.0.1" />
+    <PackageReference Include="TStack.Dapper" Version="1.0.0" />
+    <PackageReference Include="TStack.MongoDB" Version="1.0.0" />
+    <PackageReference Include="TStack.RedisExchange" Version="1.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\..\..\TStack.EntityFrameworkCore\src\TStack.EntityFrameworkCore\TStack.EntityFrameworkCore.csproj" />
-    <ProjectReference Include="..\..\..\TStack.MongoDB\src\TStack.MongoDB\TStack.MongoDB.csproj" />
     <ProjectReference Include="..\..\..\TStack.Proxy\src\TStack.Proxy\TStack.Proxy.csproj" />
   </ItemGroup>
 

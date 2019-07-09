@@ -6,7 +6,7 @@ using TStack.MongoDB.Repository;
 
 namespace TStack.Log.MongoDB
 {
-    internal class MongoManager : MongoRepositoryBase<TStackMongoLog>,ITLogger
+    internal class MongoManager : MongoRepositoryBase<TStackMongoLog>, ITLogger
     {
         public MongoManager(MongoConnection mongoConnection) : base(mongoConnection)
         {
