@@ -6,6 +6,7 @@ using TStack.ADO.Connection;
 using TStack.Log.System;
 using TStack.Log.File;
 using TStack.MongoDB.Connection;
+using TStack.Proxy.Models;
 
 namespace TStack.Log
 {

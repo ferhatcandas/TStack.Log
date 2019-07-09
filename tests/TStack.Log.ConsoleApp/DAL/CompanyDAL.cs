@@ -7,7 +7,7 @@ namespace TStack.Log.ConsoleApp
 {
     public class CompanyDAL : ICompanyDAL
     {
-        [TimeLog]
+        //[TimeLog]
         public void AddCompany(string company)
         {
             

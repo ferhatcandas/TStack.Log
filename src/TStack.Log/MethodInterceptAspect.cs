@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading;
 using TStack.Proxy;
 using TStack.Proxy.Aspects;
+using TStack.Proxy.Models;
 
 namespace TStack.Log
 {

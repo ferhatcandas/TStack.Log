@@ -13,32 +13,33 @@ namespace TStack.Log.ConsoleApp
         {
             var person = new Person() { Name = "ferhat", Surname = "candas" };
 
-            while (true)
-            {
+            //while (true)
+            //{
+            //    BenchMark(person);
+            //    BenchMark(person);
                 BenchMark(person);
-                BenchMark(person);
-                BenchMark(person);
-            }
+            //}
            
 
         }
         public static void BenchMark(Person person)
         {
-            List<Thread> requests = new List<Thread>();
-            for (int i = 0; i < 5; i++)
-            {
-                var thread = new Thread(() =>
-                {
-                    WithDI(person);
-                });
-                thread.Start();
-                requests.Add(thread);
+            WithDI(person);
+            //List<Thread> requests = new List<Thread>();
+            //for (int i = 0; i < 5; i++)
+            //{
+            //    var thread = new Thread(() =>
+            //    {
+            //        WithDI(person);
+            //    });
+            //    thread.Start();
+            //    requests.Add(thread);
 
-                foreach (var tt in requests)
-                {
-                    tt.Join();
-                }
-            }
+            //    foreach (var tt in requests)
+            //    {
+            //        tt.Join();
+            //    }
+            //}
         }
         public static void WithDI(Person person)
         {

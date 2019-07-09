@@ -14,14 +14,17 @@ namespace TStack.Log.ConsoleApp
             _personDAL = personDAL;
             _companyDAL = companyDAL;
         }
-        [TimeLog]
-        //[GlobalLoogger]
+        //[TimeLog]
+        [GlobalLoogger]
         [ExLogger]
         public void AddPerson(Person person)
         {
             _personDAL.Add(person);
             _companyDAL.AddCompany("test");
         }
+        //[ExLogger]
+        [AnyLogger]
+        [AnyLogger]
         [GlobalLoogger]
         public void EklemeYap()
         {

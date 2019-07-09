@@ -5,6 +5,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="MethodTimingAspect.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="TStack.ADO" Version="1.0.1" />
     <PackageReference Include="TStack.Dapper" Version="1.0.0" />
     <PackageReference Include="TStack.MongoDB" Version="1.0.0" />

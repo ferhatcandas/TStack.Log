@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 using TStack.Proxy;
+using TStack.Proxy.Models;
 
 namespace TStack.Log.ConsoleApp.Logger
 {

@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading;
 using TStack.MongoDB.Entity;
 using TStack.Proxy;
+using TStack.Proxy.Models;
 
 namespace TStack.Log.MongoDB
 {
@@ -17,7 +18,7 @@ namespace TStack.Log.MongoDB
             Exception = executionArgs.Exception;
             Total = executionArgs.Total;
             Result = executionArgs.Result;
-            Childs = executionArgs.Childs;
+            //Childs = executionArgs.Childs;
             ExecutionLevel = executionArgs.ExecutionLevel.ToString();
             LogDate = DateTime.Now;
         }
@@ -28,7 +29,7 @@ namespace TStack.Log.MongoDB
         public string ExecutionLevel { get; set; }
         public string LogOfName { get; set; }
         public object Result { get; set; }
-        public List<ExecutionArgs> Childs { get; set; }
+        //public List<ExecutionArgs> Childs { get; set; }
         public DateTime LogDate { get; set; }
     }
 }

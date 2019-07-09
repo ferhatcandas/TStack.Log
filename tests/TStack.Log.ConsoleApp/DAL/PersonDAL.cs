@@ -7,7 +7,7 @@ namespace TStack.Log.ConsoleApp
 {
     public class PersonDAL : IPersonDAL
     {
-        [TimeLog]
+        //[TimeLog]
         [ExLogger]
         public void Add(Person person)
         {
