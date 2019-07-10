@@ -17,12 +17,14 @@ namespace TStack.Log.ConsoleApp
         //[TimeLog]
         [GlobalLoogger]
         [ExLogger]
+        [AnyLogger]
         public void AddPerson(Person person)
         {
             _personDAL.Add(person);
             _companyDAL.AddCompany("test");
+            throw new Exception("qdqwd");
         }
-        //[ExLogger]
+        [ExLogger]
         [AnyLogger]
         [AnyLogger]
         [GlobalLoogger]

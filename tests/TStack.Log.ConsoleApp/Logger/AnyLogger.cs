@@ -10,27 +10,26 @@ namespace TStack.Log.ConsoleApp.Logger
     {
         public override void OnBefore(ExecutionArgs executionArgs)
         {
-            Console.WriteLine(executionArgs.ExecutionLevel.ToString() +" " + executionArgs.NameOfLogger);
+            LogToMongoDB(executionArgs, new MongoDB.Connection.MongoConnection("localhost", 27017, "LogDatabase"), "testCol");
         }
 
         public override void OnAfter(ExecutionArgs executionArgs)
         {
-            Console.WriteLine(executionArgs.ExecutionLevel.ToString() +" " + executionArgs.NameOfLogger);
-            Console.WriteLine(executionArgs.Total);
+            LogToMongoDB(executionArgs, new MongoDB.Connection.MongoConnection("localhost", 27017, "LogDatabase"), "testCol");
         }
         public override void OnException(ExecutionArgs executionArgs)
         {
-            Console.WriteLine(executionArgs.ExecutionLevel.ToString() +" " + executionArgs.NameOfLogger);
+            LogToMongoDB(executionArgs, new MongoDB.Connection.MongoConnection("localhost", 27017, "LogDatabase"), "testCol");
         }
 
         public override void OnExit(ExecutionArgs executionArgs)
         {
-            Console.WriteLine(executionArgs.ExecutionLevel.ToString() +" " + executionArgs.NameOfLogger);
+            LogToMongoDB(executionArgs, new MongoDB.Connection.MongoConnection("localhost", 27017, "LogDatabase"), "testCol");
         }
 
         public override void OnSuccess(ExecutionArgs executionArgs)
         {
-            Console.WriteLine(executionArgs.ExecutionLevel.ToString() +" " + executionArgs.NameOfLogger);
+            LogToMongoDB(executionArgs, new MongoDB.Connection.MongoConnection("localhost", 27017, "LogDatabase"), "testCol");
         }
     }
 }

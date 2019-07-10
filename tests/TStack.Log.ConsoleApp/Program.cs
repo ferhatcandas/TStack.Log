@@ -46,7 +46,7 @@ namespace TStack.Log.ConsoleApp
             var collections = new Startup().Init();
             var provider = collections.BuildServiceProvider();
             var service = provider.GetService<IPersonService>();
-            service.EklemeYap();
+            service.AddPerson(person);
         }
         public static void WithOutDI(Person person)
         {

@@ -10,7 +10,6 @@ namespace TStack.Log.ConsoleApp.Logger
     {
         public override void OnException(ExecutionArgs executionArgs)
         {
-            Console.WriteLine(executionArgs.Exception.Message);
         }
     }
 }
